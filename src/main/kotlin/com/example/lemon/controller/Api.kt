@@ -12,12 +12,12 @@ class Api {
     fun getFoaas(@RequestHeader("userid") userId:String): ResponseEntity<String> {
         val foaasResponse = ClientService.getFoaasResponse(userId)
         return ResponseEntity(foaasResponse, HttpStatus.OK)
-
     }
+
     @RequestMapping("error", method = arrayOf(RequestMethod.GET))
     fun error(): ResponseEntity<String> = ResponseEntity("Only /getFoaas path is supported", HttpStatus.BAD_REQUEST)
 
-   @ExceptionHandler
+    @ExceptionHandler
     fun exceptionHandler(ex: Exception): ResponseEntity<String> {
         return ResponseEntity(ex.message, HttpStatus.INTERNAL_SERVER_ERROR)
     }
