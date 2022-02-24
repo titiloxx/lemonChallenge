@@ -1,7 +1,6 @@
 package com.example.lemon
 
-import com.example.lemon.controller.Api
-import org.junit.AfterClass
+
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
@@ -93,7 +92,7 @@ class LemonApplicationTests(@Autowired val client: TestRestTemplate) {
 
 		val response=client.exchange("/getFoaasWrong", HttpMethod.GET, requestHeader, String::class.java)
 		assert(response.body!=null)
-		assert(response.body!!.contains("Only /getFoaas path is supported"))
+		assert(response.body!!.contains("Only /getFoaas endpoint is supported"))
 	}
 
 
