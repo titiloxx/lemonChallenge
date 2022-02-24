@@ -82,7 +82,7 @@ MAX_RETRIES = 5
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/titiloxx/lemonChallenge
+   git clone https://github.com/titiloxx/lemonchallenge
    ```
 2. Build image
    ```
