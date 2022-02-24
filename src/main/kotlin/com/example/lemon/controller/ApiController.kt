@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*
  */
 @RestController
 @RequestMapping("/")
-class Api {
+class ApiController {
 
     /**
      * Fetches a message from FOAAS API only if allowed.
@@ -31,21 +31,8 @@ class Api {
         return ResponseEntity(foaasResponse, HttpStatus.OK)
     }
 
-
     /**
-     * Called whenever a wrong endpoint is called.
-     *
-     * @author	Agustin Albiero
-     * @since	v1.0.0
-     * @version	v1.0.0	Thursday, February 17th, 2022.
-     * @return	error message
-     */
-    @RequestMapping("error", method = arrayOf(RequestMethod.GET))
-    fun error(): ResponseEntity<String> = ResponseEntity("Only /getFoaas path is supported", HttpStatus.BAD_REQUEST)
-
-
-    /**
-     * Handles exceptions thrown by the application.
+     * Handles exceptions thrown by ApiController.
      *
      * @author	Agustin Albiero
      * @since	v1.0.0
