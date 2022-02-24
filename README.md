@@ -82,15 +82,15 @@ MAX_RETRIES = 5
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/titiloxx/lemonchallenge
+   git clone https://github.com/titiloxx/lemonChallenge
    ```
 2. Build image
    ```
-   docker build -t lemonChallenge .
+   docker build -t lemonchallenge .
    ```
 3. Run container
    ```
-   docker run --publish 8080:8080 lemonChallenge
+   docker run --publish 8080:8080 lemonchallenge
    ```
 
 A server will be running at `http://localhost:8080/`. There is only one endpoint available: `/getFoaas`.
