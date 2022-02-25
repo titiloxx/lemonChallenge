@@ -14,11 +14,10 @@ _<!-- PROJECT LOGO -->_
     <br />
     <br />
     <a href="https://lemonchallenge.kgji2b94avk8e.us-east-1.cs.amazonlightsail.com/getFoaas">View Demo</a>
-    ·
-    <a href="https://github.com/titiloxx/lemonChallenge/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/titiloxx/lemonChallenge/issues">Request Feature</a>
-  </p>
+ ·
+<a href="https://prod.dii8zo6aut9os.amplifyapp.com/">Documentation</a>
+·<a href="https://github.com/titiloxx/lemonChallenge/issues">Report Bug</a>
+    </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -115,6 +114,10 @@ Header:
 Response:
   Fuck you, you're a fucking
 ```
+
+<br/>
+
+_For more examples, please refer to the [Documentation](https://prod.dii8zo6aut9os.amplifyapp.com/)_
 
 <!-- CONTRIBUTING -->
 ## Contributing
